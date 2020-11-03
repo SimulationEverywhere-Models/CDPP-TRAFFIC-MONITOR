@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConfigFramework>
+   <Doc> This model Simulates traffic conditions on a one-way two-lane highway.2 </Doc>
+      <Files>
+	<File ftype="ma">tmtest.ma</File>
+ 	<File ftype="stvalues">tmtest.stvalues</File>
+      </Files>
+   <Options>
+      <TimeOp>00:01:00:000</TimeOp>
+      <OnlyYMsgOP>true</OnlyYMsgOP>
+      <ParsingOp>false</ParsingOp>
+   </Options>
+  <DrawLog>
+      <CoupledModel>tmtest</CoupledModel>
+      <Width>3</Width>
+      <Precision>0</Precision>    
+      <NotPrintZero>false</NotPrintZero>   
+      <TimeInterval>00:00:01:000</TimeInterval>
+	 <NeighborPort>movement</NeighborPort> 
+   </DrawLog>  
+</ConfigFramework>
